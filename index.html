@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- JQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- css -->
+     <link rel="stylesheet" href="css/style.css">
+     <!-- fav icon -->
+      <link rel="shortcut icon" href="img/logo-Nd.png" type="image/x-icon">
+      <!-- link icon font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+    <title>NutriDelícia</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar web -->
+        <nav id="navbar">
+            <img src="img/NutriDelícia_logo-1 (2).png" alt="logo" class="nav-logo" width="140px">
+
+            <ul id="nav-list">
+                <li class="nav-item active"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+
+            <button class="btn-default">Peça aqui</button>
+            <!-- btn mobile -->
+             <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <!-- Navbar Mobile -->
+        <div id="mobile-menu">
+            <ul id="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#home">Início</a></li>
+                <li class="mobile-nav-item"><a href="#menu">Cardápio</a></li>
+                <li class="mobile-nav-item"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+            <button class="btn-default">Peça aqui</button>
+        </div><!--mobile-menu-->
+    </header>
+
+    <!-- SESSÃO HOME -->
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div><!--shape-->
+            <div id="cta-home">
+
+                <h1 class="title"> <span>Saúde</span> e <span>Sabor</span> a cada prato.</h1>
+                <p class="description">É um fato conhecido de todos que um leitor se distrairá com o 
+                    conteúdo de texto legível de uma página</p>
+
+                    <div id="cta-btn">
+                        <a href="#" class="btn-default">Ver cardápio</a>
+
+                        <a href="tel:+5521911555555" id="phone-btn">
+                            <button class="btn-default"><i class="fa-solid fa-phone"></i></button>(21) 9900-0000</a>
+                    </div><!--cta-btn-->
+
+                    <div class="social-media-btn">
+
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        
+                    </div><!--social-media-btn-->
+        
+            </div><!--cta-home-->
+
+            <div id="banner">
+                <img src="img/hero.png" alt="pratos de comida">
+            </div><!--banner-->
+        </section>
+   
+
+    <!--CARDÁPIO -->
+    <section id="menu">
+        <!-- titulo -->
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+        <!-- Pratos -->
+         <!-- DISH 1 -->
+        <div id="dishes">
+            <div class="dish">
+
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div><!--dish-heart-->
+
+                <!-- Imagens -->
+                <img src="img/Sem título-1.png" alt="prato-menu" class="dish-img" width="190px">
+                <h3 class="dish-title">Lorem Ipsum</h3>
+                <span class="dish-description">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</span>
+                
+                <!-- Avaliações com estrelas -->
+                 <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(450+)</span>
+                 </div><!--dish-rate-->
+
+                 <!-- valor dos pratos -->
+                 <div class="dish-price">
+                    <h4>R$28,00</h4>
+                    <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+                 </div><!--dish-price-->
+            </div><!--dish-->
+
+            <!-- DISH 2 -->
+            <div class="dish">
+
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div><!--dish-heart-->
+
+                <!-- Imagens -->
+                <img src="img/Sem título-2.png" alt="prato-menu" class="dish-img" width="190px">
+                <h3 class="dish-title">Lorem Ipsum</h3>
+                <span class="dish-description">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</span>
+                
+                <!-- Avaliações com estrelas -->
+                 <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    
+                    <span>(300+)</span>
+                 </div><!--dish-rate-->
+
+                 <!-- valor dos pratos -->
+                 <div class="dish-price">
+                    <h4>R$23,00</h4>
+                    <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+                 </div><!--dish-price-->
+            </div><!--dish-->
+
+        <!-- DISH 3 -->
+            <div class="dish">
+
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div><!--dish-heart-->
+
+                <!-- Imagens -->
+                <img src="img/dish3.png" alt="prato-menu" class="dish-img" width="190px">
+                <h3 class="dish-title">Lorem Ipsum</h3>
+                <span class="dish-description">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</span>
+                
+                <!-- Avaliações com estrelas -->
+                 <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(250+)</span>
+                 </div><!--dish-rate-->
+
+                 <!-- valor dos pratos -->
+                 <div class="dish-price">
+                    <h4>R$16,99</h4>
+                    <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+                 </div><!--dish-price-->
+            </div><!--dish-->
+
+        <!-- DISH 4 -->
+            <div class="dish">
+
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div><!--dish-heart-->
+
+                <!-- Imagens -->
+                <img src="img/variedade-de-frutas-na-tigela-vista-superior.png" alt="prato-menu" class="dish-img" width="190px">
+                <h3 class="dish-title">Lorem Ipsum</h3>
+                <span class="dish-description">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos</span>
+                
+                <!-- Avaliações com estrelas -->
+                 <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(180+)</span>
+                 </div><!--dish-rate-->
+
+                 <!-- valor dos pratos -->
+                 <div class="dish-price">
+                    <h4>R$18,50</h4>
+                    <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>
+                 </div><!--dish-price-->
+            </div><!--dish-->
+        </div><!--dishes-->
+
+    <!-- SESSÃO DEPOIMENTOS -->
+
+    </section><!--menu-->
+
+    <!-- SESSÃO AVALIAÇÕES
+      -->
+    <section id="testimonials">
+        <img src="img/chefs-1 (1).png" id="testimonial-chef" alt="chefs">
+
+        <div id="testimonials-content">
+            <h2 class="section-title">Depoimentos</h2>
+            <h3 class="section-subtitle">O que os clientes falam sobre nós!</h3>
+
+            <div id="feedbacks-section">
+                <div class="feedbacks">
+                    <img src="img/avatar.jpg" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>Liz Mendez
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                           
+                        </p>
+                        <p> Comida saudável e muito deliciosa.</p>
+                    </div><!--feedback-content-->
+                    
+                </div><!--feedbacks-->
+
+                <div class="feedbacks">
+                    <img src="img/avatar-2.jpg" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>Ana Laura
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            
+                        </p>
+                        <p>Entrega rápida e comida de qualidade.</p>
+                    </div><!--feedback-content-->
+                    
+                </div><!--feedbacks-->
+            </div><!--feedbacks-section-->
+
+            <button class="btn-default">Ver mais avaliações</button>
+
+        </div><!--testimonials-content-->
+    </section><!--testimonials-->
+</main>
+ <!-- FOOTER -->
+  <footer>
+    <img src="img/wave.svg"  height="69.5px" alt="onda">
+
+<div id="footer-items">
+    <span id="copyright">
+        &copy2024 Taylane Maia
+    </span>
+    <div class="social-media-btn">
+
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+    </div><!--social-media-btn-->
+</div><!--footer-items-->
+
+  </footer>
+
+
+   <!-- JS -->
+   <script src="script.js" ></script>
+</body>
+</html>

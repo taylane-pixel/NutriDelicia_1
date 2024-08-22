@@ -1,0 +1,93 @@
+:root{
+    --orange:#f25d27;
+    --green:#2b8c3a;
+    --black:#1d1d1dcb;
+    --white:#fff;
+    --bg:#fff9ea;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+#testimonials{
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+/* imagem */
+#testimonial-chef{
+    width: 500px;
+    height: auto;
+}
+/* texto */
+#testimonials .section-subtitle{
+    font-size: 3rem;
+}
+#testimonails-content{
+    width: 50%;
+}
+/* card feedback */
+#feedbacks-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.feedbacks{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    background-color:var(--white);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px var(--box-shadow);
+}
+/* imagem cards */
+.feedback-avatar{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    object-fit: cover; /*para img não perder a qualidade*/
+}
+.feedback-content  p{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-content p span{
+    color: #e9a209;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1170px){
+    #testimonials{
+        flex-direction: column;
+
+    }
+    #testimonials .section-subtitle{
+        text-align: center;
+        font-size: 2rem;
+    }
+    /* sumindo a imagem dos chefs */
+    #testimonial-chef{
+        display: none;
+    }
+    #testimonials-content{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    #testemonials .section-subtitle{
+        font-size: 2rem;
+    }
+    #testimonials-content{
+        width: 100%;
+    }
+    .feedbacks{
+        flex-direction: column;
+    }
+    
+}

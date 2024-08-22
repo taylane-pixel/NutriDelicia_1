@@ -1,0 +1,172 @@
+/* Font Poppis */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* todos os documentos css */
+@import url(home.css);
+@import url(menu.css);
+@import url(testimonials.css);
+@import url(footer.css);
+/* Padrão de cores */
+:root{
+    --orange:#f25d27;
+    --green:#2b8c3a;
+    --black:#1d1d1dad;
+    --white:#fff;
+    --bg:#fff9ea;
+    --black-2: #1a1717e8;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização geral */
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background:var(--bg);
+    
+}
+/* padding geral das sessões */
+section{
+    padding: 28px 8%;
+}
+
+/*  Estilo Header Barra de navegação */
+header{
+    width: 100%;
+    padding: 28px 8%;
+    /* manter o menu na mesma posição ao rolar a tela */
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    z-index: 3;
+    
+}
+/* barra de navegação web */
+header #navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+header .nav-logo{
+    margin-bottom: 2rem;
+}
+header #nav-list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+.nav-item a{
+    color: var(--green);
+    font-weight: 600;
+}
+/* efeito na navbar */
+.nav-item a:hover{
+    color: #08c525;
+}
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-weight: 600;
+    color: var(--white);
+    box-shadow: 0px 0px 10px 2px var(--box-shadow);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.btn-default:hover{
+    background-color: #f04203;
+}
+/* botão para o menu mobile */
+#mobile-btn{
+    display: none;
+    transition: color .3s ease;
+}
+#mobile-btn:hover{
+    color: var(--black);
+}
+#mobile-menu{
+    display: none;
+}
+
+/* Responsividade para quando a tela diminuir acontecer a mudança de layout */
+
+@media screen and (max-width: 1170px) {
+   #nav-list a, #navbar .btn-default{
+    display: none;
+   }
+   #mobile-btn{
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+   }
+}
+/* menu mobile */
+#mobile-menu.active{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+
+}
+#mobile-nav-list a{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+    color: var(--green);
+    transition: .03s ease;
+}
+#mobile-nav-list a:hover{
+    color: #08c525;
+}
+#mobile-nav-list .mobile-nav-item {
+    list-style: none;
+    text-align: center;
+    
+}
+/* social media botões */
+.social-media-btn{
+    display: flex;
+    gap: 18px;
+    
+}
+.social-media-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--black);
+    box-shadow: 0px 0px 12px 4px var(--box-shadow);
+    transition: box-shadow .3s ease;
+    background-color: var(--bg);
+}
+.social-media-btn a:hover{
+    box-shadow: 0px 0px 12px 8px var(--box-shadow);
+}
+
+/* Estilo geral dos titulos das sesões */
+
+.section-title{
+    color: var(--orange);
+    font-size: 1.563rem;
+}
+.section-subtitle{
+    color: var(--black-2);
+    font-size: 2.1875rem;
+}

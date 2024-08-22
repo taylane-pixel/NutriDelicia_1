@@ -1,0 +1,108 @@
+:root{
+    --orange:#f25d27;
+    --green:#2b8c3a;
+    --black:#0f0e0eda;
+    --white:#f2f2f2;
+    --bg:#fff9ea;
+}
+
+/* ESTILO DA SESSÃO HOME */
+#home{
+    display: flex;
+    /* calculo para espaçamento da sessão descantando o espaço da navbar */
+    min-height: calc(100vh - 71.66px); 
+    position: relative;
+
+}
+#cta-home{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-top: 28px;
+    margin: 2% ;
+}
+/* titulo e paragrafo */
+
+#cta-home .title{
+    font-size: 3rem;
+    color: var(--green);
+}
+#cta-home .title span{
+    color: var(--orange);
+}
+#cta-home .description{
+    font-size: 1.2rem;
+}
+/* botôes */
+/* btn social media estano style.css porque será utilizado em mais lugares */
+
+#cta-btn{
+    display:flex ;
+    gap: 24px;
+}
+#cta-btn a{
+    text-decoration: none;
+    color: var(--black);
+}
+#phone-btn{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgb(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+/* imagem e fundo da imagem */
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 60%;
+    z-index: 2;
+}
+#banner img{
+    height: 100%;
+    width: fit-content;
+}
+
+.shape{
+    background-color: #ec5f0ddc;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+/* responsividade */
+@media screen and (max-width: 1170px) {
+    #home{
+        min-height: 100%;
+        padding-top: 0px;
+    }
+    #banner, banner img, #home .shape{
+        display: none;
+    }
+    #cta-home{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+ }
+
+  
+ /* os botões ficam um embaixo no outro ao diminuir a tela */
+ 
+ @media screen and (max-width: 470px){
+    #cta-btn {
+        display: block;
+        width: 70%;
+        margin: 5px 0;
+    }
+
+ }
+

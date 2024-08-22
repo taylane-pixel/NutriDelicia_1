@@ -1,0 +1,103 @@
+/* Padrão de cores */
+:root{
+    --orange:#f25d27;
+    --green:#2b8c3a;
+    --black:#1d1d1dcb;
+    --white:#fff;
+    --bg:#fff9ea;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* ESTILIZANDO O CARDÁPIO */
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* titulos estilizados em style.css para estilizção geral */
+
+/* conjunto dos pratos */
+#dishes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+/* cada prato */
+.dish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 4px var(--box-shadow);
+    position: relative;
+    /* tudo que estiver por fora do dish ficar escondido (referente ao bg do icon heart) */
+    overflow: hidden; 
+}
+
+/* icon de coração */
+.dish-heart{
+    position: absolute;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--bg);
+    width: 70px;
+    height: 70px;
+    /* para o icon ir para direita e para cima */
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+/* descrição do prato */
+
+.dish-description{
+    color: var(--black);
+    text-align: center;
+}
+
+/* estrelas */
+.dish-rate i {
+    color: #e9a209;
+}
+
+/* preços */
+.dish-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* RESPONSIVIDADE DO CARDÁPIO */
+
+@media screen and (max-width: 1170px) {
+    #dishes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* calculo para dimiuir o gap 12px junto fazendo ficar dois cards cima e baixo */
+    .dish{
+        width: calc(50% - 12px);
+        
+    }
+}
+/* quando a tela atingir o tamanho de 600px os cards ficarem um embaixo do outro */
+@media screen and (max-width: 600px) {
+    .dish{
+        width: 100%;
+    }
+    #menu .section-subtitle{
+        text-align: center;
+    }
+}
